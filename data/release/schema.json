@@ -1,0 +1,370 @@
+{
+  "detail.parquet": {
+    "unit": "One printed caste/community entry",
+    "rows": 1048479,
+    "key": [
+      "sha256",
+      "sheet",
+      "source_row"
+    ],
+    "columns": {
+      "segment": {
+        "type": "int32",
+        "nullable": true
+      },
+      "sha256": {
+        "type": "string",
+        "nullable": true
+      },
+      "sheet": {
+        "type": "string",
+        "nullable": true
+      },
+      "block": {
+        "type": "int32",
+        "nullable": true
+      },
+      "district": {
+        "type": "string",
+        "nullable": true
+      },
+      "tehsil": {
+        "type": "string",
+        "nullable": true
+      },
+      "town": {
+        "type": "string",
+        "nullable": true
+      },
+      "locality_type": {
+        "type": "string",
+        "nullable": true
+      },
+      "locality_name": {
+        "type": "string",
+        "nullable": true
+      },
+      "source_row": {
+        "type": "int32",
+        "nullable": true
+      },
+      "section": {
+        "type": "string",
+        "nullable": true
+      },
+      "caste_code": {
+        "type": "string",
+        "nullable": true
+      },
+      "caste_name": {
+        "type": "string",
+        "nullable": true
+      },
+      "households": {
+        "type": "int32",
+        "nullable": true
+      },
+      "male": {
+        "type": "int32",
+        "nullable": true
+      },
+      "female": {
+        "type": "int32",
+        "nullable": true
+      },
+      "third_gender": {
+        "type": "int32",
+        "nullable": true
+      },
+      "population": {
+        "type": "int32",
+        "nullable": true
+      }
+    }
+  },
+  "localities.parquet": {
+    "unit": "One locality block within a constituency",
+    "rows": 34844,
+    "key": [
+      "segment",
+      "block"
+    ],
+    "columns": {
+      "segment": {
+        "type": "int32",
+        "nullable": true
+      },
+      "sha256": {
+        "type": "string",
+        "nullable": true
+      },
+      "sheet": {
+        "type": "string",
+        "nullable": true
+      },
+      "block": {
+        "type": "int32",
+        "nullable": true
+      },
+      "district": {
+        "type": "string",
+        "nullable": true
+      },
+      "tehsil": {
+        "type": "string",
+        "nullable": true
+      },
+      "town": {
+        "type": "string",
+        "nullable": true
+      },
+      "locality_type": {
+        "type": "string",
+        "nullable": true
+      },
+      "locality_name": {
+        "type": "string",
+        "nullable": true
+      },
+      "heading_row": {
+        "type": "int32",
+        "nullable": true
+      },
+      "total_row": {
+        "type": "int32",
+        "nullable": true
+      },
+      "detail_rows": {
+        "type": "int32",
+        "nullable": true
+      },
+      "check": {
+        "type": "string",
+        "nullable": true
+      },
+      "printed_households": {
+        "type": "double",
+        "nullable": true
+      },
+      "printed_male": {
+        "type": "double",
+        "nullable": true
+      },
+      "printed_female": {
+        "type": "double",
+        "nullable": true
+      },
+      "printed_third_gender": {
+        "type": "double",
+        "nullable": true
+      },
+      "printed_population": {
+        "type": "double",
+        "nullable": true
+      },
+      "detail_households": {
+        "type": "int32",
+        "nullable": true
+      },
+      "detail_male": {
+        "type": "int32",
+        "nullable": true
+      },
+      "detail_female": {
+        "type": "int32",
+        "nullable": true
+      },
+      "detail_third_gender": {
+        "type": "int32",
+        "nullable": true
+      },
+      "detail_population": {
+        "type": "int32",
+        "nullable": true
+      }
+    }
+  },
+  "constituencies.parquet": {
+    "unit": "One assembly constituency",
+    "rows": 224,
+    "key": [
+      "segment"
+    ],
+    "columns": {
+      "segment": {
+        "type": "int32",
+        "nullable": true
+      },
+      "sha256": {
+        "type": "string",
+        "nullable": true
+      },
+      "sheet": {
+        "type": "string",
+        "nullable": true
+      },
+      "cover_name": {
+        "type": "string",
+        "nullable": true
+      },
+      "internal_segment": {
+        "type": "int32",
+        "nullable": true
+      },
+      "constituency_label": {
+        "type": "string",
+        "nullable": true
+      },
+      "total_label": {
+        "type": "string",
+        "nullable": true
+      },
+      "total_row": {
+        "type": "int32",
+        "nullable": true
+      },
+      "detail_source_sha256": {
+        "type": "string",
+        "nullable": true
+      },
+      "blocks": {
+        "type": "int32",
+        "nullable": true
+      },
+      "detail_rows": {
+        "type": "int32",
+        "nullable": true
+      },
+      "check": {
+        "type": "string",
+        "nullable": true
+      },
+      "printed_households": {
+        "type": "double",
+        "nullable": true
+      },
+      "printed_male": {
+        "type": "double",
+        "nullable": true
+      },
+      "printed_female": {
+        "type": "double",
+        "nullable": true
+      },
+      "printed_third_gender": {
+        "type": "double",
+        "nullable": true
+      },
+      "printed_population": {
+        "type": "double",
+        "nullable": true
+      },
+      "detail_households": {
+        "type": "int32",
+        "nullable": true
+      },
+      "detail_male": {
+        "type": "int32",
+        "nullable": true
+      },
+      "detail_female": {
+        "type": "int32",
+        "nullable": true
+      },
+      "detail_third_gender": {
+        "type": "int32",
+        "nullable": true
+      },
+      "detail_population": {
+        "type": "int32",
+        "nullable": true
+      },
+      "locality_households": {
+        "type": "double",
+        "nullable": true
+      },
+      "locality_male": {
+        "type": "double",
+        "nullable": true
+      },
+      "locality_female": {
+        "type": "double",
+        "nullable": true
+      },
+      "locality_third_gender": {
+        "type": "double",
+        "nullable": true
+      },
+      "locality_population": {
+        "type": "double",
+        "nullable": true
+      }
+    }
+  },
+  "exceptions.parquet": {
+    "unit": "One flagged source or parsing issue",
+    "rows": 83,
+    "key": null,
+    "columns": {
+      "segment": {
+        "type": "int32",
+        "nullable": true
+      },
+      "sha256": {
+        "type": "string",
+        "nullable": true
+      },
+      "sheet": {
+        "type": "string",
+        "nullable": true
+      },
+      "block": {
+        "type": "int32",
+        "nullable": true
+      },
+      "source_row": {
+        "type": "int32",
+        "nullable": true
+      },
+      "issue": {
+        "type": "string",
+        "nullable": true
+      },
+      "evidence": {
+        "type": "string",
+        "nullable": true
+      }
+    }
+  },
+  "auxiliary.parquet": {
+    "unit": "One secondary worksheet row",
+    "rows": 63,
+    "key": [
+      "sha256",
+      "sheet",
+      "source_row"
+    ],
+    "columns": {
+      "segment": {
+        "type": "int32",
+        "nullable": true
+      },
+      "sha256": {
+        "type": "string",
+        "nullable": true
+      },
+      "sheet": {
+        "type": "string",
+        "nullable": true
+      },
+      "source_row": {
+        "type": "int32",
+        "nullable": true
+      },
+      "cells": {
+        "type": "list<element: string>",
+        "nullable": true
+      }
+    }
+  }
+}
